@@ -2,7 +2,7 @@ import React from "react";
 
 function Novbar() {
   return (
-    <div className="navbar bg-base-100 drop-shadow-lg w-full ">
+    <div className="navbar bg-base-100 drop-shadow-lg w-full px-20 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
