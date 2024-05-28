@@ -4,6 +4,9 @@ import HeroProduct from "./components/HeroProduct";
 import ProductList from "./components/ProductList";
 import ProductGrid from "./components/ProductGrid";
 import OurBlog from "./components/OurBlog";
+import Client from "./components/Client";
+import Help from "./components/Help";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
         <ProductList />
         <ProductGrid />
         <OurBlog />
+        <Client />
+        <Help />
       </div>
+      <Footer />
     </>
   );
 }

@@ -31,7 +31,7 @@ function HeroProduct() {
         <figure>
           <img
             height=""
-            src="/public/image 2.png"
+            src="/image 2.png"
             className=" size-96 object-contain "
             alt=""
           />

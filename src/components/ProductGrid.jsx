@@ -39,7 +39,7 @@ let productGrid = [
 
 function ProductGrid() {
   return (
-    <ul className="grid grid-cols-1 gap-y-5  containerH items-center justify-between w-full md:grid-cols-2 lg:grid-cols-3">
+    <ul className="grid grid-cols-1 gap-y-5 ml-7 containerH items-center justify-between w-full md:grid-cols-2 lg:grid-cols-3">
       {productGrid.map((product) => {
         return (
           <li className="border-opacity-80 border rounded-lg h-full w-[370px] p-5 flex flex-col items-start justify-center gap-10 cursor-pointer">

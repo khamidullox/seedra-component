@@ -1,39 +1,22 @@
 import React from "react";
 
-function Novbar() {
+function Footer() {
   return (
-    <div className="navbar bg-base-100 drop-shadow-lg w-full px-20 ">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
-          >
-            <li>
-              <a href="">ALL PRODUCTS</a>
-            </li>
-            <li>ABOUT SEEDRA</li>
-            <li>OUR BLOG</li>
-            <li>CONTACTS</li>
-          </ul>
-        </div>
-        <a className="btn btn-ghost text-l">
+    <footer className="mb-5">
+      <ul className="flex  w-full items-center justify-between px-52 mt-20 ">
+        <li className="flex gap-5 ">
+          ALL PRODUCTS <hr className=" h-6 border  bg-green-900" />
+        </li>
+        <li className="flex gap-5 ml-2">
+          ABOUT SEEDRA
+          <hr className=" h-6 border  bg-green-900" />
+        </li>
+        <li className="flex gap-5  ml-1">
+          OUR BLOG
+          <hr className=" h-6 border  bg-green-900" />
+        </li>
+        <li className=" opacity-90 mx-20">
+          {" "}
           <svg
             width="97"
             height="21"
@@ -73,17 +56,18 @@ function Novbar() {
               </clipPath>
             </defs>
           </svg>
-        </a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-5 opacity-80">
-          <li>ALL PRODUCTS</li>
-          <li>ABOUT SEEDRA</li>
-          <li>OUR BLOG</li>
-          <li>CONTACTS</li>
-        </ul>
-      </div>
-      <div className="navbar-end gap-5 cursor-pointer">
+        </li>
+        <li className="flex gap-5">
+          Terms&Conditions
+          <hr className=" h-6 border  bg-green-900" />
+        </li>
+        <li className="flex gap-5 ml-2 ">
+          Privacy Policy
+          <hr className=" h-6 border  bg-green-900" />
+        </li>
+      </ul>
+      <hr className=" w-full border my-10 containerH" />
+      <div className="flex justify-between items-center containerH">
         <svg
           width="56"
           height="24"
@@ -94,43 +78,20 @@ function Novbar() {
           <g opacity="0.5">
             <path
               d="M12 8.87578C10.2797 8.87578 8.87579 10.2797 8.87579 12C8.87579 13.7203 10.2797 15.1242 12 15.1242C13.7203 15.1242 15.1242 13.7203 15.1242 12C15.1242 10.2797 13.7203 8.87578 12 8.87578ZM21.3703 12C21.3703 10.7062 21.382 9.42422 21.3094 8.13281C21.2367 6.63281 20.8945 5.30156 19.7977 4.20469C18.6984 3.10547 17.3695 2.76562 15.8695 2.69297C14.5758 2.62031 13.2938 2.63203 12.0023 2.63203C10.7086 2.63203 9.42657 2.62031 8.13516 2.69297C6.63516 2.76562 5.30391 3.10781 4.20704 4.20469C3.10782 5.3039 2.76797 6.63281 2.69532 8.13281C2.62266 9.42656 2.63438 10.7086 2.63438 12C2.63438 13.2914 2.62266 14.5758 2.69532 15.8672C2.76797 17.3672 3.11016 18.6984 4.20704 19.7953C5.30625 20.8945 6.63516 21.2344 8.13516 21.307C9.42891 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7977 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2937 21.3703 12ZM12 16.807C9.33985 16.807 7.19297 14.6602 7.19297 12C7.19297 9.33984 9.33985 7.19297 12 7.19297C14.6602 7.19297 16.807 9.33984 16.807 12C16.807 14.6602 14.6602 16.807 12 16.807ZM17.0039 8.11875C16.3828 8.11875 15.8813 7.61719 15.8813 6.99609C15.8813 6.375 16.3828 5.87344 17.0039 5.87344C17.625 5.87344 18.1266 6.375 18.1266 6.99609C18.1268 7.14357 18.0978 7.28964 18.0415 7.42593C17.9851 7.56222 17.9024 7.68606 17.7982 7.79034C17.6939 7.89463 17.57 7.97731 17.4338 8.03367C17.2975 8.09002 17.1514 8.11893 17.0039 8.11875Z"
-              fill="#70737C"
+              fill="#359740"
             />
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M34 12.0558C34 17.0275 37.6108 21.1617 42.3333 22V14.7775H39.8333V12H42.3333V9.7775C42.3333 7.2775 43.9442 5.88917 46.2225 5.88917C46.9442 5.88917 47.7225 6 48.4442 6.11083V8.66667H47.1667C45.9442 8.66667 45.6667 9.2775 45.6667 10.0558V12H48.3333L47.8892 14.7775H45.6667V22C50.3892 21.1617 54 17.0283 54 12.0558C54 6.525 49.5 2 44 2C38.5 2 34 6.525 34 12.0558Z"
-              fill="#70737C"
+              fill="#359740"
             />
           </g>
         </svg>
-
-        <label className="input input-bordered flex items-center  rounded-full">
-          <input
-            type="text"
-            className="grow rounded-full"
-            placeholder="Search"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-            className="w-4 h-4 opacity-70"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </label>
-        <div className="flex gap-3">
-          <a className=" cursor-pointer">🤍</a>
-          <a className=" cursor-pointer">🛒</a>
-        </div>
+        <h5>All rights reserved</h5>
       </div>
-    </div>
+    </footer>
   );
 }
 
-export default Novbar;
+export default Footer;
