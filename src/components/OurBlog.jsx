@@ -7,7 +7,7 @@ function OurBlog() {
       <div className="flex justify-between  my-5 items-center">
         <h4 className="font-bold text-3xl">Our blog.</h4>
         <h6 className="text-green-500 border p-3 px-5 border-opacity-50  rounded-md mr- cursor-pointer">
-          Go to our blog
+          Go to our blogs
         </h6>
       </div>
     </div>
